@@ -1,0 +1,320 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.MathOperations.RealType.Signals</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Real signals for modelling disturbances or smooth set point references&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Signals<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.MathOperations.RealType.Signals"></A><A HREF="IndustrialControlSystems_MathOperations_RealType.html#IndustrialControlSystems.MathOperations.RealType"
+>IndustrialControlSystems.MathOperations.RealType</A>.Signals</H2>
+<B>Real signals for modelling disturbances or smooth set point references</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE></pre>
+This sub-package contains a set of set point signal generator as well noise ones.<br>
+<pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.noiseGenS.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.noiseGen" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals.noiseGen"
+>noiseGen</A>
+</TD><TD>Noise generator</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepS.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStep" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStep"
+>SmoothStep</A>
+</TD><TD>Smooth step Set pointgenerator</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothS.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThooth" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThooth"
+>SmoothThooth</A>
+</TD><TD>Smooth thooth Set point generator</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignalS.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignal" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignal"
+>SmoothStepSignal</A>
+</TD><TD>Smooth step Set Point generator, driven by signals</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignalS.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignal" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignal"
+>SmoothThoothSignal</A>
+</TD><TD>Smooth thooth Set Point generator, driven by signals</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE noiseGen<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.noiseGenI.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.noiseGen" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.MathOperations.RealType.Signals.noiseGen"></A><A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals"
+>IndustrialControlSystems.MathOperations.RealType.Signals</A>.noiseGen</H2>
+<B>Noise generator</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of a noisy signal.<br><br>
+  
+  <img src="images/Math/RealType/Signals/Noise.png">
+  <br><br>
+  The output ( <FONT FACE=Courier>y</FONT> ) is the result of an algorithm that produces a sequence of pseudo random values.<br>
+  The properties of the signal can be modified through the algorithm parameters: <FONT FACE=Courier>amp</FONT> and <FONT FACE=Courier>X_start</FONT>.<br>
+  The output is filtered through a first order low pass filter, with time constant <FONT FACE=Courier>Ts</FONT>
+  </p>
+  <p><br><b>Fixed Point not available in this model</b>  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_MathOperations_RealType_Interfaces.html#IndustrialControlSystems.MathOperations.RealType.Interfaces.RealNinOperation"
+>Interfaces.RealNinOperation</A> (Real comparison interface).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>sampling time</TD></TR>
+<TR><TD>nInput</TD><TD>number of inputs</TD></TR>
+<TR><TD>useInputs</TD><TD>=true, if inputs are enabled</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fixed Point</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use fixed point real numbers</TD></TR>
+<TR><TD>Nbit</TD><TD> Number of bit for representing the real numbers</TD></TR>
+<TR><TD>scaleFactor</TD><TD> Scale factor for Fixed Point numbers</TD></TR>
+<TR><TD>MAX</TD><TD> maximum number that can be represented with Fixed Point notation</TD></TR>
+<TR><TD>MIN</TD><TD> mainimum number that can be represented with Fixed Point notation</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Noise generator</TD></TR>
+<TR><TD>amp</TD><TD> Amplitude</TD></TR>
+<TR><TD>Tf</TD><TD> First order filter time constant</TD></TR>
+<TR><TD>X_start</TD><TD> Initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[nInput]</TD><TD>input vector</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SmoothStep<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepI.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStep" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStep"></A><A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals"
+>IndustrialControlSystems.MathOperations.RealType.Signals</A>.SmoothStep</H2>
+<B>Smooth step Set pointgenerator</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of a smooth step signal.
+  <br><br>
+  <img src="images/Math/RealType/Signals/SmoothStep.png">
+  <br><br>
+  The output ( <FONT FACE=Courier>y</FONT> ) remains at its initial value <FONT FACE=Courier>yin</FONT> until time 
+  is equal to <FONT FACE=Courier>tin</FONT>.<br>
+  Then the signal changes smoothly. After the smoth start the signal grows up linearly with a slope <FONT FACE=Courier>m</FONT>.
+  When the output signal is close to the final value <FONT FACE=Courier>yfin</FONT>, it is reached smoothly.<br>
+  The parameter <FONT FACE=Courier>alfa</FONT> (that has to be coprises between 0 and 1), indicates the portion of the rising 
+  time occupied by the smooth junction.<br>
+  In this case <FONT FACE=Courier>alfa = 0.1</FONT>, this indicates that each junction occupy the 10 % of the total rising time.  
+    </p>
+  <p><br><b>Fixed Point not available in this model</b>  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_MathOperations_RealType_Interfaces.html#IndustrialControlSystems.MathOperations.RealType.Interfaces.RealNinOperation"
+>Interfaces.RealNinOperation</A> (Real comparison interface).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>sampling time</TD></TR>
+<TR><TD>nInput</TD><TD>number of inputs</TD></TR>
+<TR><TD>useInputs</TD><TD>=true, if inputs are enabled</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fixed Point</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use fixed point real numbers</TD></TR>
+<TR><TD>Nbit</TD><TD> Number of bit for representing the real numbers</TD></TR>
+<TR><TD>scaleFactor</TD><TD> Scale factor for Fixed Point numbers</TD></TR>
+<TR><TD>MAX</TD><TD> maximum number that can be represented with Fixed Point notation</TD></TR>
+<TR><TD>MIN</TD><TD> mainimum number that can be represented with Fixed Point notation</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Smooth step</TD></TR>
+<TR><TD>tin</TD><TD> Initial time</TD></TR>
+<TR><TD>alfa</TD><TD> Portion of time for parabolic junctions</TD></TR>
+<TR><TD>yin</TD><TD> Output initial value</TD></TR>
+<TR><TD>yfin</TD><TD> Output final value</TD></TR>
+<TR><TD>m</TD><TD> Slope of the ramp</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[nInput]</TD><TD>input vector</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SmoothThooth<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothI.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThooth" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThooth"></A><A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals"
+>IndustrialControlSystems.MathOperations.RealType.Signals</A>.SmoothThooth</H2>
+<B>Smooth thooth Set point generator</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of a smooth thooth signal.
+  <br><br>
+  <img src="images/Math/RealType/Signals/SmoothThooth.png">
+  <br><br>
+  The output ( <FONT FACE=Courier>y</FONT> ) remains at its initial value <FONT FACE=Courier>yin</FONT> until time 
+  is equal to <FONT FACE=Courier>ts</FONT>.<br>
+  Then the signal changes smoothly. After the smoth start the signal grows up linearly with a slope <FONT FACE=Courier>m</FONT>.
+  When the output signal is close to the final value <FONT FACE=Courier>yfin</FONT>, it is reached smoothly.<br>
+  At time <FONT FACE=Courier>td</FONT> the signal returns at its initial value in a specular way.<br>
+  The parameter <FONT FACE=Courier>alfa</FONT> (that has to be coprises between 0 and 1), indicates the portion of the rising 
+  time occupied by the smooth junction.<br>
+  In figure are compared two models that have respectively <FONT FACE=Courier>alfa = 0.1</FONT> and <FONT FACE=Courier>alfa = 0.4</FONT>.
+  </p>
+  <p><br><b>Fixed Point not available in this model</b>  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_MathOperations_RealType_Interfaces.html#IndustrialControlSystems.MathOperations.RealType.Interfaces.RealNinOperation"
+>Interfaces.RealNinOperation</A> (Real comparison interface).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>sampling time</TD></TR>
+<TR><TD>nInput</TD><TD>number of inputs</TD></TR>
+<TR><TD>useInputs</TD><TD>=true, if inputs are enabled</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fixed Point</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use fixed point real numbers</TD></TR>
+<TR><TD>Nbit</TD><TD> Number of bit for representing the real numbers</TD></TR>
+<TR><TD>scaleFactor</TD><TD> Scale factor for Fixed Point numbers</TD></TR>
+<TR><TD>MAX</TD><TD> maximum number that can be represented with Fixed Point notation</TD></TR>
+<TR><TD>MIN</TD><TD> mainimum number that can be represented with Fixed Point notation</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Smooth step</TD></TR>
+<TR><TD>ts</TD><TD> Initial rising time</TD></TR>
+<TR><TD>td</TD><TD> Initial falling time</TD></TR>
+<TR><TD>alfa</TD><TD> Portion of time for parabolic junctions</TD></TR>
+<TR><TD>yin</TD><TD> Output initial value</TD></TR>
+<TR><TD>yfin</TD><TD> Output final value</TD></TR>
+<TR><TD>m</TD><TD> Slope of the ramp</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[nInput]</TD><TD>input vector</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SmoothStepSignal<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignalI.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignal" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothStepSignal"></A><A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals"
+>IndustrialControlSystems.MathOperations.RealType.Signals</A>.SmoothStepSignal</H2>
+<B>Smooth step Set Point generator, driven by signals</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of a smooth step signal.
+  <br><br>
+  <img src="images/Math/RealType/Signals/SmoothStepSignal.png">
+  <br><br>
+  The output ( <FONT FACE=Courier>y</FONT> ) remains at its initial value <FONT FACE=Courier>yin</FONT> 
+  until the enabling input <FONT FACE=Courier>ENup</FONT> remains <FONT FACE=Courier>false</FONT>.<br>
+  Then the signal changes smoothly. After the smoth start the signal grows up linearly with a slope <FONT FACE=Courier>m</FONT>.
+  When the output signal is close to the final value <FONT FACE=Courier>yfin</FONT>, it is reached smoothly.<br>
+  The parameter <FONT FACE=Courier>alfa</FONT> (that has to be coprises between 0 and 1), indicates the portion of the rising 
+  time occupied by the smooth junction.<br>
+  In this case <FONT FACE=Courier>alfa = 0.1</FONT>, this indicates that each junction occupy the 10 % of the total rising time.<br>
+  The additional parameter <FONT FACE=Courier>Delay = 1.5</FONT>, indicates that the output has to be delayed by <FONT FACE=Courier>1.5</FONT> seconds. 
+    </p>
+  <p><br><b>Fixed Point not available in this model</b>  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_MathOperations_RealType_Interfaces.html#IndustrialControlSystems.MathOperations.RealType.Interfaces.RealNinOperation"
+>Interfaces.RealNinOperation</A> (Real comparison interface).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>sampling time</TD></TR>
+<TR><TD>nInput</TD><TD>number of inputs</TD></TR>
+<TR><TD>useInputs</TD><TD>=true, if inputs are enabled</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fixed Point</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use fixed point real numbers</TD></TR>
+<TR><TD>Nbit</TD><TD> Number of bit for representing the real numbers</TD></TR>
+<TR><TD>scaleFactor</TD><TD> Scale factor for Fixed Point numbers</TD></TR>
+<TR><TD>MAX</TD><TD> maximum number that can be represented with Fixed Point notation</TD></TR>
+<TR><TD>MIN</TD><TD> mainimum number that can be represented with Fixed Point notation</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Smooth step</TD></TR>
+<TR><TD>alfa</TD><TD> Portion of time for parabolic junctions</TD></TR>
+<TR><TD>yin</TD><TD> Output initial value</TD></TR>
+<TR><TD>yfin</TD><TD> Output final value</TD></TR>
+<TR><TD>m</TD><TD> Slope of the ramp</TD></TR>
+<TR><TD>tin</TD><TD> Initial time</TD></TR>
+<TR><TD>delay</TD><TD> Delay</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[nInput]</TD><TD>input vector</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+<TR><TD>ENup</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SmoothThoothSignal<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignalI.png" ALT="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignal" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.MathOperations.RealType.Signals.SmoothThoothSignal"></A><A HREF="IndustrialControlSystems_MathOperations_RealType_Signals.html#IndustrialControlSystems.MathOperations.RealType.Signals"
+>IndustrialControlSystems.MathOperations.RealType.Signals</A>.SmoothThoothSignal</H2>
+<B>Smooth thooth Set Point generator, driven by signals</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of a smooth thooth signal.
+  <br><br>
+  <img src="images/Math/RealType/Signals/SmoothThoothSignal.png">
+  <br><br>
+  The output ( <FONT FACE=Courier>y</FONT> ) remains at its initial value <FONT FACE=Courier>yin</FONT> 
+  until the enabling input <FONT FACE=Courier>ENup</FONT> remains <FONT FACE=Courier>false</FONT>.<br>
+  Then the signal changes smoothly. After the smoth start the signal grows up linearly with a slope <FONT FACE=Courier>m</FONT>.
+  When the output signal is close to the final value <FONT FACE=Courier>yfin</FONT>, it is reached smoothly.<br>
+  The signal returns at its initial value in a specular way, when the input <FONT FACE=Courier>ENup</FONT> becomes <FONT FACE=Courier>true</FONT>.<br>
+  The parameter <FONT FACE=Courier>alfa</FONT> (that has to be coprises between 0 and 1), indicates the portion of the rising 
+  time occupied by the smooth junction.<br>
+  The rising is delayed by <FONT FACE=Courier>wait_s</FONT> seconds, while the falling is delayed by <FONT FACE=Courier>wait_d</FONT> seconds.<br>
+  Initial and final values are externally defined.
+  </p>
+  <p><br><b>Fixed Point not available in this model</b>  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_MathOperations_RealType_Interfaces.html#IndustrialControlSystems.MathOperations.RealType.Interfaces.RealNinOperation"
+>Interfaces.RealNinOperation</A> (Real comparison interface).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>sampling time</TD></TR>
+<TR><TD>nInput</TD><TD>number of inputs</TD></TR>
+<TR><TD>useInputs</TD><TD>=true, if inputs are enabled</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fixed Point</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use fixed point real numbers</TD></TR>
+<TR><TD>Nbit</TD><TD> Number of bit for representing the real numbers</TD></TR>
+<TR><TD>scaleFactor</TD><TD> Scale factor for Fixed Point numbers</TD></TR>
+<TR><TD>MAX</TD><TD> maximum number that can be represented with Fixed Point notation</TD></TR>
+<TR><TD>MIN</TD><TD> mainimum number that can be represented with Fixed Point notation</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Smooth step</TD></TR>
+<TR><TD>alfa</TD><TD> Portion of time for parabolic junctions</TD></TR>
+<TR><TD>m</TD><TD> Slope of the ramp</TD></TR>
+<TR><TD>wait_s</TD><TD> Rising delay</TD></TR>
+<TR><TD>wait_d</TD><TD> Falling delay</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[nInput]</TD><TD>input vector</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+<TR><TD>ENup</TD><TD>&nbsp;</TD></TR>
+<TR><TD>ENdown</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:14 2012.
+</address></BODY>
+</HTML>

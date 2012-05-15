@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.Logical.Counter</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;This package contains UP and DOWN counters.&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Counter<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.Logical.Counter"></A><A HREF="IndustrialControlSystems_Logical.html#IndustrialControlSystems.Logical"
+>IndustrialControlSystems.Logical</A>.Counter</H2>
+<B>This package contains UP and DOWN counters.</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  This package contains models that represent digital up/down counter.<br>
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Logical.Counter.CounterS.png" ALT="IndustrialControlSystems.Logical.Counter.Counter" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Logical_Counter.html#IndustrialControlSystems.Logical.Counter.Counter"
+>Counter</A>
+</TD><TD>Model of an Up-Down counter</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Logical.Counter.InterfacesS.png" ALT="IndustrialControlSystems.Logical.Counter.Interfaces" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Logical_Counter_Interfaces.html#IndustrialControlSystems.Logical.Counter.Interfaces"
+>Interfaces</A>
+</TD><TD>Interfaces</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Logical.Counter.FunctionsS.png" ALT="IndustrialControlSystems.Logical.Counter.Functions" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Logical_Counter_Functions.html#IndustrialControlSystems.Logical.Counter.Functions"
+>Functions</A>
+</TD><TD>Functions</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Logical.Counter.ExamplesS.png" ALT="IndustrialControlSystems.Logical.Counter.Examples" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Logical_Counter_Examples.html#IndustrialControlSystems.Logical.Counter.Examples"
+>Examples</A>
+</TD><TD>Examples</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Counter<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Logical.Counter.CounterI.png" ALT="IndustrialControlSystems.Logical.Counter.Counter" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Logical.Counter.Counter"></A><A HREF="IndustrialControlSystems_Logical_Counter.html#IndustrialControlSystems.Logical.Counter"
+>IndustrialControlSystems.Logical.Counter</A>.Counter</H2>
+<B>Model of an Up-Down counter</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Model of an Up-Down counter.<br><br>
+  
+  At each time step <FONT FACE=Courier>Ts</FONT> the inputs are read and the new output values <FONT FACE=Courier>Q</FONT> and
+  <FONT FACE=Courier>CV</FONT> are computed.<br><br>
+  
+  In the former image, are reported the <FONT FACE=Courier>S</FONT> (Set), <FONT FACE=Courier>R</FONT> (Reset), <FONT FACE=Courier>CU</FONT> (CountUP),
+  <FONT FACE=Courier>CD</FONT> (CountDown) signals.<br>
+  The latter images contains the <FONT FACE=Courier>CV</FONT> (Current Value) and the <FONT FACE=Courier>PV</FONT>(Preset Value).<br>
+  <img src="images/Logical/Counter/Counter1.png"><br>
+  <img src="images/Logical/Counter/Counter2.png">
+  <br><br>
+  
+  The counter update the <FONT FACE=Courier>CV</FONT> when the Set signal rises, then for each rising edge of the Count Up (<FONT FACE=Courier>CU</FONT>) 
+  or Count Down (<FONT FACE=Courier>CD</FONT>) signals the <FONT FACE=Courier>CV</FONT> is incremented or decremented by 1.<br>
+  The Set signal has to be high during this phase, otherwise the rising edges are not detected.<br>
+  When the Reset (<FONT FACE=Courier>R</FONT>) signal rises, the counter is reset to zero.<br>
+  </p>
+  <p>
+  <b>Constraints</b><br>
+  The current value <FONT FACE=Courier>CV</FONT> must be
+  <pre> 
+  0 &lt;= CV &lt;= Max
+  </pre>
+  Where <FONT FACE=Courier>Max</FONT> is the module of the counter.
+  </p>
+  
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_Logical_Counter_Interfaces.html#IndustrialControlSystems.Logical.Counter.Interfaces.BaseCounter"
+>Interfaces.BaseCounter</A> (Partial interface of a generic counter).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Ts</TD><TD>Sampling time [s]</TD></TR>
+<TR><TD>Max</TD><TD>module of counter</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>CU</TD><TD>Count Up: The counter is incremented by 1 if the signal state changes from 0 to 1</TD></TR>
+<TR><TD>CD</TD><TD>Count Down: The counter is decremented by 1 if the signal state changes from 0 to 1</TD></TR>
+<TR><TD>S</TD><TD>set: Sets the counter with the value at the Preset Value (PV)</TD></TR>
+<TR><TD>R</TD><TD>reset: Sets the counter whit the value 0, and stop the counting</TD></TR>
+<TR><TD>PV</TD><TD>Preset Value</TD></TR>
+<TR><TD>CV</TD><TD>Current Value</TD></TR>
+<TR><TD>Q</TD><TD>status of the counter (1: counting, 0: not counting)</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:13 2012.
+</address></BODY>
+</HTML>

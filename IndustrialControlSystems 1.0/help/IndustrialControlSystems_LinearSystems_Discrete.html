@@ -1,0 +1,493 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.LinearSystems.Discrete</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Discretised linear systems&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Discrete<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.LinearSystems.Discrete"></A><A HREF="IndustrialControlSystems_LinearSystems.html#IndustrialControlSystems.LinearSystems"
+>IndustrialControlSystems.LinearSystems</A>.Discrete</H2>
+<B>Discretised linear systems</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discrete time blocks<br>
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.IntegratorS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Integrator" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.Integrator"
+>Integrator</A>
+</TD><TD>Integrator: mu/s</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.FirstOrderS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.FirstOrder" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.FirstOrder"
+>FirstOrder</A>
+</TD><TD>First order process: mu/(1+tau*s)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.FirstOrderS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.LeadLag" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.LeadLag"
+>LeadLag</A>
+</TD><TD>Lead lag process: mu(1+T1*s)/(1+T2*s)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.FirstOrderS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.ComplexPoles" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.ComplexPoles"
+>ComplexPoles</A>
+</TD><TD>Process with complex poles</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroesS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroes" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroes"
+>TwoPolesTwoZeroes</A>
+</TD><TD>Process with an integrator, 1 pole and 2 zeroes: mu(1+sT1)(1+sT2)/(1+sT3)s</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.TransferFunctionS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.TransferFunction" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.TransferFunction"
+>TransferFunction</A>
+</TD><TD> Model of a generic rational transfer function
+  [a(m)*s^m + a(m-1)*s^(m-1) + ... + a(1)*s + a(0) ]/[b(n)*s^n + b(n-1)*s^(n-1) + ... + b(1)*s + b(0) ] </TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.DelayS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Delay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.Delay"
+>Delay</A>
+</TD><TD>Unitary time delay</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.DelayS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.MultiStepsDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete.MultiStepsDelay"
+>MultiStepsDelay</A>
+</TD><TD>Multistep time delay</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.FunctionsS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Functions" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete_Functions.html#IndustrialControlSystems.LinearSystems.Discrete.Functions"
+>Functions</A>
+</TD><TD>Functions</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.TypesS.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Types" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Discrete_Types.html#IndustrialControlSystems.LinearSystems.Discrete.Types"
+>Types</A>
+</TD><TD>New types definition</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Integrator<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.IntegratorI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Integrator" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.Integrator"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.Integrator</H2>
+<B>Integrator: mu/s</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function of an integrating process.
+  <pre>
+   Y(s)      mu
+   ----  = ------
+   U(s)      s
+  </pre>
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE FirstOrder<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.FirstOrderI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.FirstOrder" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.FirstOrder"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.FirstOrder</H2>
+<B>First order process: mu/(1+tau*s)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function of first order process.
+  <pre>
+   Y(s)         mu
+   ----  = ------------
+   U(s)      (1+s*tau)
+  </pre>
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR><TD>tau</TD><TD> Time constant</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE LeadLag<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.LeadLagI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.LeadLag" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.LeadLag"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.LeadLag</H2>
+<B>Lead lag process: mu(1+T1*s)/(1+T2*s)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function of a lead lag process.
+  <pre>
+   Y(s)        (1 + s*T1)
+   ----  = mu ------------
+   U(s)        (1 + s*T2)
+  </pre>
+  <br>
+  The time constant <FONT FACE=Courier>T1</FONT> must be different from <FONT FACE=Courier>T2</FONT>.
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR><TD>T1</TD><TD> Costante di tempo dello zero</TD></TR>
+<TR><TD>T2</TD><TD> Costante di tempo del polo</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ComplexPoles<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.ComplexPolesI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.ComplexPoles" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.ComplexPoles"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.ComplexPoles</H2>
+<B>Process with complex poles</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function of a process with complex poles.
+  <pre>
+   Y(s)                      1
+   ----  = mu ------------------------------------
+   U(s)        (1 + s*2*xi/omegan + (s/omegan)^2)
+  </pre>
+  <br>
+  The damping coefficient <FONT FACE=Courier>xi</FONT> must be between <FONT FACE=Courier>[0,1]</FONT>.
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>xi</TD><TD> Damping coefficient</TD></TR>
+<TR><TD>omegan</TD><TD> Natural frequency</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+<TR><TD>dy_start</TD><TD> Slope initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TwoPolesTwoZeroes<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroesI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroes" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.TwoPolesTwoZeroes"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.TwoPolesTwoZeroes</H2>
+<B>Process with an integrator, 1 pole and 2 zeroes: mu(1+sT1)(1+sT2)/(1+sT3)s</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function of a process with an integrator, one pole and two zeroes.
+  <pre>
+   Y(s)        (1 + s*T1)*(1 + s*T2)
+   ----  = mu ----------------------
+   U(s)            s*(1 + s*T3)
+  </pre>
+  <br>
+  The time constants <FONT FACE=Courier>T1</FONT> and <FONT FACE=Courier>T2</FONT> must be different from <FONT FACE=Courier>T3</FONT>.
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR><TD>T1</TD><TD> first zero&#39;s time constant</TD></TR>
+<TR><TD>T2</TD><TD> second zero&#39;s time constant</TD></TR>
+<TR><TD>T3</TD><TD> pole&#39;s time constant</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TransferFunction<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.TransferFunctionI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.TransferFunction" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.TransferFunction"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.TransferFunction</H2>
+<B> Model of a generic rational transfer function
+  [a(m)*s^m + a(m-1)*s^(m-1) + ... + a(1)*s + a(0) ]/[b(n)*s^n + b(n-1)*s^(n-1) + ... + b(1)*s + b(0) ] </B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discretised version of the continuous time transfer function, defined by its numerator and denumerator.
+  <pre>
+   Y(s)     a(m)*s^m + a(m-1)*s^(m-1) + ... + a(1)*s + a(0) 
+   ----  = -------------------------------------------------
+   U(s)     b(n)*s^n + b(n-1)*s^(n-1) + ... + b(1)*s + b(0)
+  </pre>
+  <br>
+  The order of the numerator cannot be higher than the denumerator one: <FONT FACE=Courier>m &lt;= n</FONT>.
+  </p>
+  <p>
+  <h4>Discretisation</h4>
+  The discretisation of the continuos time transfer function has been performed with the bilinear transformation formula
+  <pre>
+                 z - 1 
+  s = ------------------------------
+        z*alpha*Ts - (alpha - 1)*Ts
+  </pre>
+  that is equivalent to<br>
+  <ul>
+  <li>Forward Euler (FE) if <pre><FONT FACE=Courier>alpha = 0</FONT></pre></li>
+  <li>Backward Euler (BE) if <pre><FONT FACE=Courier>alpha = 1</FONT></pre></li>
+  <li>Tustin (TU) if <pre><FONT FACE=Courier>alpha = 0.5</FONT></pre></li>
+  </ul>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Block parameters</TD></TR>
+<TR><TD>num[:]</TD><TD> Numerators coefficients (4*s + 2) is {4,2}</TD></TR>
+<TR><TD>den[:]</TD><TD> Denumerators coefficients (4*s + 2) is {4,2}</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+<TR><TD>initOutput</TD><TD> Initialise the output</TD></TR>
+<TR><TD>initSteadyState</TD><TD> Initialise at steady state</TD></TR>
+<TR><TD>initSteadyOutput</TD><TD> Initialise at steady output</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Delay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.DelayI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.Delay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.Delay"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.Delay</H2>
+<B>Unitary time delay</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discrete version of the single step time delay.
+  <pre>
+   Y(s) = e^(-s*Ts)*U(s)
+  </pre>
+  <br>
+  The delay must be positive <FONT FACE=Courier>T &gt;= 0</FONT>.
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>LinearSystems.Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Initial conditions</TD></TR>
+<TR><TD>y_start</TD><TD> Output initial value</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE MultiStepsDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Discrete.DelayI.png" ALT="IndustrialControlSystems.LinearSystems.Discrete.MultiStepsDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Discrete.MultiStepsDelay"></A><A HREF="IndustrialControlSystems_LinearSystems_Discrete.html#IndustrialControlSystems.LinearSystems.Discrete"
+>IndustrialControlSystems.LinearSystems.Discrete</A>.MultiStepsDelay</H2>
+<B>Multistep time delay</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  Discrete version of the multistep time delay.
+  <pre>
+   Y(s) = e^(-s*N*Ts)*U(s)
+  </pre>
+  <br>
+  The delay must be positive <FONT FACE=Courier>T &gt;= 0</FONT>.
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_LinearSystems_Interfaces.html#IndustrialControlSystems.LinearSystems.Interfaces.DiscreteBaseBlock"
+>LinearSystems.Interfaces.DiscreteBaseBlock</A> (Partial discrete time block interfaces).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>N</TD><TD>Fixed multi-step dalay</TD></TR>
+<TR><TD>y_start</TD><TD>Initial output value</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time [s]</TD></TR>
+<TR><TD>method</TD><TD> Discretisation method</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>input</TD></TR>
+<TR><TD>y</TD><TD>output</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:15 2012.
+</address></BODY>
+</HTML>

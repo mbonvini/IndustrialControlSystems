@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.Logical.Comparisons.Examples</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Examples&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Examples<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.Logical.Comparisons.Examples"></A><A HREF="IndustrialControlSystems_Logical_Comparisons.html#IndustrialControlSystems.Logical.Comparisons"
+>IndustrialControlSystems.Logical.Comparisons</A>.Examples</H2>
+<B>Examples</B>
+<P>
+<P><H3>Information</H3></P>
+Extends from <A HREF="IndustrialControlSystems_Icons_ExamplesPackage.html#IndustrialControlSystems.Icons.ExamplesPackage"
+>IndustrialControlSystems.Icons.ExamplesPackage</A> (Examples package icon).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Logical.Comparisons.Examples.TestComparisonS.png" ALT="IndustrialControlSystems.Logical.Comparisons.Examples.TestComparison" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Logical_Comparisons_Examples.html#IndustrialControlSystems.Logical.Comparisons.Examples.TestComparison"
+>TestComparison</A>
+</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TestComparison<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Logical.Comparisons.Examples.TestComparisonI.png" ALT="IndustrialControlSystems.Logical.Comparisons.Examples.TestComparison" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Logical.Comparisons.Examples.TestComparison"></A><A HREF="IndustrialControlSystems_Logical_Comparisons_Examples.html#IndustrialControlSystems.Logical.Comparisons.Examples"
+>IndustrialControlSystems.Logical.Comparisons.Examples</A>.TestComparison</H2>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<h4>Description</h4>
+<p>
+In this examples are tested the Real comparison operations.<br>
+The two signals compared are:
+<pre>
+u1(t) = sin(t)
+u2(t) = cos(t)
+</pre>
+<br>
+The boolean signals are true if<br>
+<pre>
+u1(t) == u2(t)
+u2(t) &lt; u2(t)
+</pre><br>
+Depending on the value of the sampling time <FONT FACE=Courier>Ts</FONT> adopted and the tolerance value of <FONT FACE=Courier>eps</FONT>,
+the conditions can be <FONT FACE=Courier>true</FONT> or not.<br>
+In this case <FONT FACE=Courier>Ts = 0.001</FONT> and <FONT FACE=Courier>eps = 0.01</FONT>
+<br><br>
+<img src="images/Logical/Comparisons/Examples/OutputSignals.png"><br><br>
+In this case <FONT FACE=Courier>Ts = 0.001</FONT> and <FONT FACE=Courier>eps = 0.001</FONT>
+<br><br>
+<img src="images/Logical/Comparisons/Examples/Signals.png"><br><br>
+It is evident that with a smaller tolerance, the boolean signal that represents the equality of the two signals becames shorter.
+</p>
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Sampling</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Real numbers</TD></TR>
+<TR><TD>eps</TD><TD> Comparison threshold</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:13 2012.
+</address></BODY>
+</HTML>

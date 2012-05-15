@@ -1,0 +1,274 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.Applications.ProcessControl</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Package that contains a list of control oriented applications&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ProcessControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.Applications.ProcessControl"></A><A HREF="IndustrialControlSystems_Applications.html#IndustrialControlSystems.Applications"
+>IndustrialControlSystems.Applications</A>.ProcessControl</H2>
+<B>Package that contains a list of control oriented applications</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  In this sub-package the library blocks are used to control true industrial processes.<br>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_Icons_ExamplesPackage.html#IndustrialControlSystems.Icons.ExamplesPackage"
+>IndustrialControlSystems.Icons.ExamplesPackage</A> (Examples package icon).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.LevelControlS.png" ALT="IndustrialControlSystems.Applications.ProcessControl.LevelControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl.LevelControl"
+>LevelControl</A>
+</TD><TD>Level control with a PI controller</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.LevelControlS.png" ALT="IndustrialControlSystems.Applications.ProcessControl.CascadeLevelControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl.CascadeLevelControl"
+>CascadeLevelControl</A>
+</TD><TD>Cascade level control with PI controllers</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuningS.png" ALT="IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuning" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuning"
+>VelocityDriveControl_AutoTuning</A>
+</TD><TD>Velocity control of an electric engine with Automatic Tuning</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE LevelControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.LevelControlI.png" ALT="IndustrialControlSystems.Applications.ProcessControl.LevelControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ProcessControl.LevelControl"></A><A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl"
+>IndustrialControlSystems.Applications.ProcessControl</A>.LevelControl</H2>
+<B>Level control with a PI controller</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  Level control with a PI regulator.<br>
+  The considered system is a tank filled with water. The water level is the process variable to be controlled.<br>
+  The system (see the figure below) is composed by a tank and one pipe connected to a linear valve that discharges 
+  the water in the atmosphere. The valve actuator is represented by a first order filter.<br>
+  The control system is composed by the measurement part and the controller. The pressure sensor measures the absolute pressure<br>
+  on the bottom of the tank.<br>
+  <img src="images/Applications/ControlProblems/LevelControl_Scheme.png"><br>
+  The measured pressure is subtracted from the atmospheric pressure and then divided by the<br>
+  gravity acceleration and the water density in order to obtain the water level.
+  <pre>
+  level = (p - p0)/(rho*g)
+  </pre>
+  The PI controller, given the level measurement and the set point reference compute the control action. Such a control<br>
+  action is the desidered valve position<br>
+  <ul>
+  <li>CS = 0 valve closed,</li>
+  <li>CS = 1 valve fully open</li>
+  </ul><br>
+  
+  The tank is 2 m height, and the water level at t=0 is L = 1 m.<br>
+  In the first phase the controller is asked to maintain the level at the initial value (SP = 1 m), at t = 1200 s the level set point<br>
+  decrease as a step (SP = 0.5 m). The controller has to act on the valve in order to decrease the water level to the desired value.<br>
+  A disturb represented by a water mass flow rate entering the tank, becomes different from zero at time t = 3600 s.<br>
+  <br>Set Point reference, water level and valve position command<br>
+  <img src="images/Applications/ControlProblems/LevelControl_1.png"><br>
+  The simulation can be perfomed at an initial stage assuming that the controller is a continuous time one (<FONT FACE=Courier>Ts = 0</FONT>)
+  , that the math<br> operations are in double precision (<FONT FACE=Courier>FixedPoint = false</FONT>). In such a phase it is possible to concentrate on the controller design.
+  </p>
+  <h4>Further stages</h4>
+  <p>
+  Once the controller has been designed and the parameters assigned, one should introduce more details in order to simulate
+  a more realistic system.
+  At first it is possible to introduce the time discretisation and investigate the effect of the sampling time.<br> 
+  Here follows the results for a sapling time <FONT FACE=Courier>Ts = 5</FONT>.<br>
+  <img src="images/Applications/ControlProblems/LevelControl_2.png"><br><br>
+  An additional level of detail can be the introduction of the fixed point math operation in the level measurement process.
+  In this case has been choosen a number of bit
+  <FONT FACE=Courier>Nbit = 24</FONT>
+  this means that the integer number that can be represented are comprises between <FONT FACE=Courier>MIN = -8388609</FONT> and <FONT FACE=Courier>MAX = 8388608</FONT>.
+  At the first stage, the measured pressure have to be subtracted of the ambient one. In the wors case, the higher pressure value
+  that can be read as input from the math operation block is
+  <pre>
+  101325 + 1000*9.81*2 = 120945
+  </pre>
+  that is more or less two order of magnitude less that the higher integer number MAX.
+  This means that the input numbers can be multiplied by a scale factor comprises between 10 and 50. 
+  In this case the scale factor that has been choosen is <FONT FACE=Courier>sFactor = 20</FONT>.
+  In a similat way the scale factor of the division can be choosen. In this case <FONT FACE=Courier>sFactor = 500</FONT>.
+  <br>
+  <b>N.B.</b> A large amount of bit is requireb because the pressure variation is small with respect to its absolute value.
+  Using such a modelling approach it is possible to estimate the amount of bits required and test directly the correctness 
+  of the design strategy. In the following image the numerical errors due to a wrong design are visible on the Control Signal<br>
+  <img src="images/Applications/ControlProblems/LevelControl_3.png"><br><br>
+  
+  </p>
+  
+  
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Process</TD></TR>
+<TR><TD>PipeL</TD><TD> Pipe length [m]</TD></TR>
+<TR><TD>PipeD</TD><TD> Pipe diameter [m]</TD></TR>
+<TR><TD>Lstart</TD><TD> Initial water level [m]</TD></TR>
+<TR><TD>H</TD><TD> Storage height [m]</TD></TR>
+<TR><TD>A</TD><TD> Cross section storage area [m2]</TD></TR>
+<TR><TD>Tact</TD><TD> Actuator dynamics</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Controller</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time for the valve controller</TD></TR>
+<TR><TD>Kp</TD><TD> Proportional gain</TD></TR>
+<TR><TD>Ti</TD><TD> Integral time</TD></TR>
+<TR><TD>AntiWindup</TD><TD> Flag that enables the antiwindup feature</TD></TR>
+<TR><TD>CSmin</TD><TD> minimum value of the CS</TD></TR>
+<TR><TD>CSmax</TD><TD> maximum value of the CS</TD></TR>
+<TR><TD>CS_start</TD><TD> output initial value</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Conversion</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use FP operations for level measurement operations</TD></TR>
+<TR><TD>Nbit</TD><TD> number of bit for FP operations</TD></TR>
+<TR><TD>scaleF_div</TD><TD> division scale factor</TD></TR>
+<TR><TD>scaleF_sub</TD><TD> subtraction scale factor</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CascadeLevelControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.LevelControlI.png" ALT="IndustrialControlSystems.Applications.ProcessControl.CascadeLevelControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ProcessControl.CascadeLevelControl"></A><A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl"
+>IndustrialControlSystems.Applications.ProcessControl</A>.CascadeLevelControl</H2>
+<B>Cascade level control with PI controllers</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  Level control with two PI controllers, connected with a cascade arrangement.<br>
+  The considered system is a tank filled with water. The water level is the process variable to be controlled.<br>
+  The system (see the figure below) is composed by a tank and one pipe connected to a linear valve that discharges 
+  the water in the atmosphere. The valve actuator is represented by a first order filter.<br>
+  The control system is composed by the measurement part and the controller. The pressure sensor measures the absolute pressure<br>
+  on the bottom of the tank.<br>
+  <img src="images/Applications/ControlProblems/LevelValveCascade.png"><br>
+  The measured pressure is subtracted from the atmospheric pressure and then divided by the<br>
+  gravity acceleration and the water density in order to obtain the water level.
+  <pre>
+  level = (p - p0)/(rho*g)
+  </pre>
+  The PI controller, given the level measurement and the set point reference compute the control action. Such a control<br>
+  action is the water mass flow rate flowing through the pipe. Such a mass flow rate becomes the set point reference for the second<br>
+  PI that with its control action regulates the valve aperture
+  <ul>
+  <li>CS = 0 valve closed,</li>
+  <li>CS = 1 valve fully open</li>
+  </ul><br>
+  
+  The tank is 2 m height, and the water level at t=0 is L = 1 m.<br>
+  In the first phase the controller is asked to maintain the level at the initial value (SP = 1 m), at t = 1200 s the level set point<br>
+  decrease as a step (SP = 0.5 m). The controller has to act on the valve in order to decrease the water level to the desired value.<br>
+  A disturb represented by a water mass flow rate entering the tank, becomes different from zero at time t = 3600 s.<br>
+  <br>Set Point reference, water level<br>
+  <img src="images/Applications/ControlProblems/CascadeLevelPV.png"><br>
+  <br>Set Point reference (the Control signal of the Level PI) and valve command<br>
+  <img src="images/Applications/ControlProblems/CascadeValvePV.png"><br>
+  The simulation can be perfomed at an initial stage assuming that the controller is a continuous time one (<FONT FACE=Courier>Ts = 0</FONT>)
+  , that the math<br> operations are in double precision (<FONT FACE=Courier>FixedPoint = false</FONT>). 
+  In such a phase it is possible to concentrate on the controller design.
+  </p>
+  <h4>Further stages</h4>
+  <p>
+  Once the controller has been designed and the parameters assigned, one should introduce more details in order to simulate
+  a more realistic system. Please refers to the previous example 
+  ( <a src="modelica://IndustrialControlSystems.Applications.ProcessControl.LevelControl">LevelControl</a> ) for more information.
+  </p>
+  
+  
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Process</TD></TR>
+<TR><TD>PipeL</TD><TD> Pipe length [m]</TD></TR>
+<TR><TD>PipeD</TD><TD> Pipe diameter [m]</TD></TR>
+<TR><TD>Lstart</TD><TD> Initial water level [m]</TD></TR>
+<TR><TD>H</TD><TD> Storage height [m]</TD></TR>
+<TR><TD>A</TD><TD> Cross section storage area [m2]</TD></TR>
+<TR><TD>Tact</TD><TD> Actuator dynamics</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Controller level</TD></TR>
+<TR><TD>Ts_l</TD><TD> Sampling time for the valve controller</TD></TR>
+<TR><TD>Kp_l</TD><TD> Proportional gain</TD></TR>
+<TR><TD>Ti_l</TD><TD> Integral time</TD></TR>
+<TR><TD>AntiWindup_l</TD><TD> Flag that enables the antiwindup feature</TD></TR>
+<TR><TD>CSmin_l</TD><TD> minimum value of the CS</TD></TR>
+<TR><TD>CSmax_l</TD><TD> maximum value of the CS</TD></TR>
+<TR><TD>CS_start_l</TD><TD> output initial value</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Controller valve</TD></TR>
+<TR><TD>Ts_v</TD><TD> Sampling time for the valve controller</TD></TR>
+<TR><TD>Kp_v</TD><TD> Proportional gain</TD></TR>
+<TR><TD>Ti_v</TD><TD> Integral time</TD></TR>
+<TR><TD>CSmin_v</TD><TD> minimum value of the CS</TD></TR>
+<TR><TD>CSmax_v</TD><TD> maximum value of the CS</TD></TR>
+<TR><TD>CS_start_v</TD><TD> output initial value</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Controller</TD></TR>
+<TR><TD>AntiWindup_v</TD><TD> Flag that enables the antiwindup feature</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Conversion</TD></TR>
+<TR><TD>FixedPoint</TD><TD> Use FP operations for level measurement operations</TD></TR>
+<TR><TD>Nbit</TD><TD> number of bit for FP operations</TD></TR>
+<TR><TD>scaleF_div</TD><TD> division scale factor</TD></TR>
+<TR><TD>scaleF_sub</TD><TD> subtraction scale factor</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE VelocityDriveControl_AutoTuning<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuningI.png" ALT="IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuning" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ProcessControl.VelocityDriveControl_AutoTuning"></A><A HREF="IndustrialControlSystems_Applications_ProcessControl.html#IndustrialControlSystems.Applications.ProcessControl"
+>IndustrialControlSystems.Applications.ProcessControl</A>.VelocityDriveControl_AutoTuning</H2>
+<B>Velocity control of an electric engine with Automatic Tuning</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  Velocity control of an electric engine with a PI controller.<br><br>
+  <img src="images/Applications/ControlProblems/AutoTuningPIMotor.png"><br><br>
+  The PI controller regulates the voltage source of the electric engine, and measures its angular velocity (corrupted by noise).
+  The aim of this example is to show how a controller with Automatic Tuning can be used in a real context.
+  <br><br>
+  In the following table are listed the controller parameters before and after the Automatic tuning
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>0.2</td><td>0.5167</td></tr>
+  <tr><td>Ti</td><td>0.5</td><td>0.1399</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>5</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>70</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  The figure below show the velocity set point, the measured process variable and the control signal, that is limited between 0 and 24 V.
+  <img src="images/Applications/ControlProblems/AutoTuningPIMotorPV.png"><br><br>
+  
+  <h4>References</h4>
+  For more information please refers to the following
+  <a href="/home/marco/Dropbox/ControlLibrary/finalVersion/IndustrialControlSystems/help/refs/EffHybPITuning.pdf">paper</a>:<br><br>
+  <b>Efficient hybrid simulation of autotuning PI controllers</b><br>
+  Alberto Leva, Marco Bonvini<br>
+  8th Modelica Conference, Dresden, Germany<br>
+  march 20-22, 2011<br>
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:17 2012.
+</address></BODY>
+</HTML>

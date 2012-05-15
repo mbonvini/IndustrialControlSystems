@@ -1,0 +1,280 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.LinearSystems.Examples</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Examples&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Examples<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.LinearSystems.Examples"></A><A HREF="IndustrialControlSystems_LinearSystems.html#IndustrialControlSystems.LinearSystems"
+>IndustrialControlSystems.LinearSystems</A>.Examples</H2>
+<B>Examples</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE></pre>
+This sub-package contains some examples.<br>
+<pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_Icons_ExamplesPackage.html#IndustrialControlSystems.Icons.ExamplesPackage"
+>IndustrialControlSystems.Icons.ExamplesPackage</A> (Examples package icon).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.Basic" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.Basic"
+>Basic</A>
+</TD><TD>Comparison of the basic continuous and discrete time blocks</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonFO" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.BasicComparisonFO"
+>BasicComparisonFO</A>
+</TD><TD>Comparison of the various discretisation methods (First Order)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonLL" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.BasicComparisonLL"
+>BasicComparisonLL</A>
+</TD><TD>Comparison of the various discretisation methods (Lead Lag)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonComplex" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.BasicComparisonComplex"
+>BasicComparisonComplex</A>
+</TD><TD>Comparison of the various discretisation methods (Complex Poles)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.ComparisonTFunction" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.ComparisonTFunction"
+>ComparisonTFunction</A>
+</TD><TD>Comparison of the various discretisation methods (generic Trasfer Function)</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicS.png" ALT="IndustrialControlSystems.LinearSystems.Examples.testDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples.testDelay"
+>testDelay</A>
+</TD><TD>Test of the delay operator: continuous, discrete (with and without initialisation)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Basic<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.Basic" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.Basic"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.Basic</H2>
+<B>Comparison of the basic continuous and discrete time blocks</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the step responces of various basic linear systems:
+  <ul>
+  <li>integrator,</li>
+  <li>first order,</li>
+  <li>lead lag,</li>
+  <li>and complex poles</li>
+  </ul><br/>
+  
+  For each continuous time system there is its discretised version. It is possible to modify the discretisation methods <br>
+  as well the sampling time in order to see the changes.
+  <br/><br/>
+  <b> Continuous time </b><br>
+  <img src="images/LinearSystems/Examples/BasicStepresp.png">
+  <br/><br/>
+  <b> Discrete time (Forward Euler) </b><br>
+  <img src="images/LinearSystems/Examples/BasicSteprespDig.png">
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Integrator </TD></TR>
+<TR><TD>mu_int</TD><TD> Integrating process gain</TD></TR>
+<TR><TD>y_start_int</TD><TD> Integrating process initial condition</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>First Order </TD></TR>
+<TR><TD>mu_FO</TD><TD> First order process gain</TD></TR>
+<TR><TD>tau_FO</TD><TD> First order time constant</TD></TR>
+<TR><TD>y_start_FO</TD><TD> initial condition</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Lead Lag </TD></TR>
+<TR><TD>mu_LL</TD><TD> Lead Lag process gain</TD></TR>
+<TR><TD>y_start_LL</TD><TD> Lead Lag initial condition</TD></TR>
+<TR><TD>T1_LL</TD><TD> Lead Lag time constant of the zero</TD></TR>
+<TR><TD>T2_LL</TD><TD> Lead Lag time constant of the pole</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Complex poles</TD></TR>
+<TR><TD>mu_cpx</TD><TD> Complex poles process gain</TD></TR>
+<TR><TD>omegan_cpx</TD><TD> Complex poles natural frequency</TD></TR>
+<TR><TD>xi_cpx</TD><TD> Complex poles dumping factor</TD></TR>
+<TR><TD>y_start_cpx</TD><TD> Complex poles initial value</TD></TR>
+<TR><TD>dy_start_cpx</TD><TD> Complex poles initial slope</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+<TR><TD>method</TD><TD> Method</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE BasicComparisonFO<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonFO" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonFO"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.BasicComparisonFO</H2>
+<B>Comparison of the various discretisation methods (First Order)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the step responces of a first order linear systems:
+  <ul>
+  <li>continuous,</li>
+  <li>discretised with BE,</li>
+  <li>discretised with FE,</li>
+  <li>and discretised with TU</li>
+  </ul><br/>
+  
+  <b> Comparison </b><br>
+  <img src="images/LinearSystems/Examples/Comparison_FO.png">
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>First Order </TD></TR>
+<TR><TD>mu_FO</TD><TD> First order process gain</TD></TR>
+<TR><TD>tau_FO</TD><TD> First order time constant</TD></TR>
+<TR><TD>y_start_FO</TD><TD> initial condition</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE BasicComparisonLL<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonLL" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonLL"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.BasicComparisonLL</H2>
+<B>Comparison of the various discretisation methods (Lead Lag)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the step responces of a first order linear systems:
+  <ul>
+  <li>continuous,</li>
+  <li>discretised with BE,</li>
+  <li>discretised with FE,</li>
+  <li>and discretised with TU</li>
+  </ul><br/>
+  
+  <b> Comparison </b><br>
+  <img src="images/LinearSystems/Examples/Comparison_LL.png">
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Lead Lag </TD></TR>
+<TR><TD>mu_LL</TD><TD> Lead Lag process gain</TD></TR>
+<TR><TD>y_start_LL</TD><TD> Lead Lag initial condition</TD></TR>
+<TR><TD>T1_LL</TD><TD> Lead Lag time constant of the zero</TD></TR>
+<TR><TD>T2_LL</TD><TD> Lead Lag time constant of the pole</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE BasicComparisonComplex<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonComplex" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.BasicComparisonComplex"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.BasicComparisonComplex</H2>
+<B>Comparison of the various discretisation methods (Complex Poles)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the step responces of a first order linear systems:
+  <ul>
+  <li>continuous,</li>
+  <li>discretised with BE,</li>
+  <li>discretised with FE,</li>
+  <li>and discretised with TU</li>
+  </ul><br/>
+  
+  <b> Comparison </b><br>
+  <img src="images/LinearSystems/Examples/Comparison_CPX.png">
+  
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Complex poles</TD></TR>
+<TR><TD>mu_cpx</TD><TD> Complex poles process gain</TD></TR>
+<TR><TD>omegan_cpx</TD><TD> Complex poles natural frequency</TD></TR>
+<TR><TD>xi_cpx</TD><TD> Complex poles damping factor</TD></TR>
+<TR><TD>y_start_cpx</TD><TD> Complex poles initial value</TD></TR>
+<TR><TD>dy_start_cpx</TD><TD> Complex poles initial slope</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ComparisonTFunction<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.ComparisonTFunction" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.ComparisonTFunction"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.ComparisonTFunction</H2>
+<B>Comparison of the various discretisation methods (generic Trasfer Function)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the step responces of a first order linear systems:
+  <ul>
+  <li>continuous,</li>
+  <li>discretised with BE,</li>
+  <li>discretised with FE,</li>
+  <li>and discretised with TU</li>
+  </ul><br/>
+  
+  <b> Comparison </b><br>
+  <img src="images/LinearSystems/Examples/BasicStepresp.png">
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Transfer Function</TD></TR>
+<TR><TD>a[:]</TD><TD> Numerator coefficients</TD></TR>
+<TR><TD>b[:]</TD><TD> Denumerator coefficients</TD></TR>
+<TR><TD>y_start</TD><TD> Initial value</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Discretisation</TD></TR>
+<TR><TD>Ts</TD><TD> Sampling time</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE testDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.LinearSystems.Examples.BasicI.png" ALT="IndustrialControlSystems.LinearSystems.Examples.testDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.LinearSystems.Examples.testDelay"></A><A HREF="IndustrialControlSystems_LinearSystems_Examples.html#IndustrialControlSystems.LinearSystems.Examples"
+>IndustrialControlSystems.LinearSystems.Examples</A>.testDelay</H2>
+<B>Test of the delay operator: continuous, discrete (with and without initialisation)</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description of the example</h4>
+  <p>
+  In this example are shown the delay operators.<br>
+  The figure shows both the continuous and the discrete delay operators. More in detail it is shown how the initialisation can <br>
+  cause problems, in wrongly defined.
+  <br/><br/>
+  
+  <img src="images/LinearSystems/Examples/TestDelay1.png"><br>
+  <img src="images/LinearSystems/Examples/TestDelay2.png">
+  <br/
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:15 2012.
+</address></BODY>
+</HTML>

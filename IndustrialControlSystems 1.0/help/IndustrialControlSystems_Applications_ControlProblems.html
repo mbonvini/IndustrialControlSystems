@@ -1,0 +1,713 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.Applications.ControlProblems</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Packge that contains a list of control oriented examples&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ControlProblems<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.Applications.ControlProblems"></A><A HREF="IndustrialControlSystems_Applications.html#IndustrialControlSystems.Applications"
+>IndustrialControlSystems.Applications</A>.ControlProblems</H2>
+<B>Packge that contains a list of control oriented examples</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  This sub-package contains various examples that show the usage of the library blocks.<br>
+  </p>
+  <pre></PRE><P>
+Extends from <A HREF="IndustrialControlSystems_Icons_ExamplesPackage.html#IndustrialControlSystems.Icons.ExamplesPackage"
+>IndustrialControlSystems.Icons.ExamplesPackage</A> (Examples package icon).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.ProcessControlS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.ProcessControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.ProcessControl"
+>ProcessControl</A>
+</TD><TD>PID control of typical processes</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.ProcessControlS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.ATProcessControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.ATProcessControl"
+>ATProcessControl</A>
+</TD><TD>PI control of typical processes, with automatic tuning</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigital" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigital"
+>PI_ContinuousVsDigital</A>
+</TD><TD>Comparison between continuous time PID and its discrete time implementations</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.CascadeControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.CascadeControl"
+>CascadeControl</A>
+</TD><TD>Cascade control</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.CascadeAntiWindup" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.CascadeAntiWindup"
+>CascadeAntiWindup</A>
+</TD><TD>Example of cascade control with external lock</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.SmithPredictor" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems.SmithPredictor"
+>SmithPredictor</A>
+</TD><TD>Smith predictor controller for delayed processes</TD></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.DecoupledControlS.png" ALT="IndustrialControlSystems.Applications.ControlProblems.DecoupledControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_ControlProblems_DecoupledControl.html#IndustrialControlSystems.Applications.ControlProblems.DecoupledControl"
+>DecoupledControl</A>
+</TD><TD>Example of decoupled control</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ProcessControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.ProcessControlI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.ProcessControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.ProcessControl"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.ProcessControl</H2>
+<B>PID control of typical processes</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  In this examples the typical processes (contained in model
+   <A HREF="IndustrialControlSystems_Applications_TrasferFunctions.html#IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF"
+>TypicalTF</a> ) 
+  are controlled with PID regulators.
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1
+  ---- = -----
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>100</td></tr>
+  <tr><td>Ti</td><td>1</td></tr>
+  <tr><td>Td</td><td>0.1</td></tr>
+  <tr><td>N</td><td>10</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/IntegratorControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1     -1s
+  ---- = ----- e
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>5</td></tr>
+  <tr><td>Ti</td><td>30</td></tr>
+  <tr><td>Td</td><td>0.1</td></tr>
+  <tr><td>N</td><td>8</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/IntegratorDelayControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1   
+  ---- = -------- 
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>10</td></tr>
+  <tr><td>Ti</td><td>3</td></tr>
+  <tr><td>Td</td><td>0.8</td></tr>
+  <tr><td>N</td><td>8</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FirstOrderControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1      -2s
+  ---- = -------- e
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>1</td></tr>
+  <tr><td>Ti</td><td>4</td></tr>
+  <tr><td>Td</td><td>0.2</td></tr>
+  <tr><td>N</td><td>5</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FirstOrderDelayControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Fast Slow</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 5.8s  
+  ---- = -------------- 
+  U(s)    (1 + 6s)(1+s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>5</td></tr>
+  <tr><td>Ti</td><td>0.8</tr>
+  <tr><td>Td</td><td>0.2</tr>
+  <tr><td>N</td><td>10</tr>
+  <tr><td>b</td><td>1</tr>
+  <tr><td>c</td><td>1</tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FastSlowControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Overshooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 8s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>5</tr>
+  <tr><td>Ti</td><td>2</td></tr>
+  <tr><td>Td</td><td>1</td></tr>
+  <tr><td>N</td><td>10</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/OverShootingControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Undershooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 - 5.5s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>0.1</td></tr>
+  <tr><td>Ti</td><td>2</td></tr>
+  <tr><td>Td</td><td>5</td></tr>
+  <tr><td>N</td><td>5</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/UnderShootingControlled.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Complex Poles</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)            1  
+  ---- = -------------------- 
+  U(s)    1 + 1.2 s + 0.025s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>Kp</td><td>10</td></tr>
+  <tr><td>Ti</td><td>2.5</td></tr>
+  <tr><td>Td</td><td>1</td></tr>
+  <tr><td>N</td><td>10</td></tr>
+  <tr><td>b</td><td>1</td></tr>
+  <tr><td>c</td><td>1</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/CompexPolesControlled.png"><br>
+  
+  </p>
+  
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ATProcessControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.ProcessControlI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.ATProcessControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.ATProcessControl"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.ATProcessControl</H2>
+<B>PI control of typical processes, with automatic tuning</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  In this examples the typical processes (contained in model
+   <A HREF="IndustrialControlSystems_Applications_TrasferFunctions.html#IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF"
+>TypicalTF</a> ) 
+  are controlled with PI regulators with automatic tuning. The aim of this example is to show how the automatic
+  tuning algorithm works with varius processes. For each trasfer function taken into account have been compared the 
+  parameter values before and after the tuning. Also the algorith parameters are listed too. It is possible to see 
+  that they have different values, depending on the considered example (e.g. the slope must be adapted in order to 
+  avoid big oscillations, the percentual tolerance have to be adapted if the period of the oscillation changes,...).<br>
+  The example is made of three phases:
+  <ul>
+  <li>Set point following with default parameters,</li>
+  <li>Automatic tuning,</li>
+  <li>Set point following with the tuned parameters.</li>
+  </ul><br>
+  
+  <br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1
+  ---- = -----
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>5</td><td>73.4625</td></tr>
+  <tr><td>Ti</td><td>1</td><td>0.273</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/IntegratorControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1     -1s
+  ---- = ----- e
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>5</td><td>1.067</td></tr>
+  <tr><td>Ti</td><td>30</td><td>26.54</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>0.01</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>30</td></tr>
+  <tr><td>pm</td><td>70</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/IntegratorDelayControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1   
+  ---- = -------- 
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>5</td><td>71.5948</td></tr>
+  <tr><td>Ti</td><td>1</td><td>0.1365</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FirstOrderControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1      -2s
+  ---- = -------- e
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>1</td><td>2.11</td></tr>
+  <tr><td>Ti</td><td>4</td><td>5.1879</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>0.1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FirstOrderDelayControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Fast Slow</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 5.8s  
+  ---- = -------------- 
+  U(s)    (1 + 6s)(1+s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>5</td><td>14.056</td></tr>
+  <tr><td>Ti</td><td>1</td><td>0.1365</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/FastSlowControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Overshooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 8s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>5</td><td>17.3146</td></tr>
+  <tr><td>Ti</td><td>1</td><td>0.1365</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/OverShootingControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Undershooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 - 5.5s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>0.1</td><td>7.69</td></tr>
+  <tr><td>Ti</td><td>1</td><td>0.692</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>0.05</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>45</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/UnderShootingControlledAT.png"><br>
+  
+  <br/><br/>Process Trasfer function </br>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Complex Poles</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)            1  
+  ---- = -------------------- 
+  U(s)    1 + 1.2 s + 0.025s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  Controller parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Before</TH><TH>After AT</TH></TR>
+  <tr><td>Kp</td><td>1</td><td>0.548</td></tr>
+  <tr><td>Ti</td><td>5</td><td>4.3</td></tr>
+  </table><br><br>
+  Automatic Tuning algorithm parameters
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH>Parameter</TH><TH>Value</TH></TR>
+  <tr><td>slope</td><td>0.1</td></tr>
+  <tr><td>PermOxPeriodPerc</td><td>5</td></tr>
+  <tr><td>pm</td><td>65</td></tr>
+  <tr><td>nOxMin</td><td>3</td></tr>
+  </table><br><br>
+  <img src="images/Applications/ControlProblems/CompexPolesControlledAT.png"><br>
+  
+  </p>
+  
+  <pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE PI_ContinuousVsDigital<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigital" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigital"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.PI_ContinuousVsDigital</H2>
+<B>Comparison between continuous time PID and its discrete time implementations</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  In this examples are compared three PID controllers:
+  <ul>
+  <li>Continuous time PID with two degrees of freedom
+  (model <A HREF="IndustrialControlSystems_Controllers.html#IndustrialControlSystems.Controllers.PID"
+>PID </a>(with Ts=0) ),</li>
+  <li>the discretised version of the continuous time PID with two degrees of freedom
+  (model <A HREF="IndustrialControlSystems_Controllers.html#IndustrialControlSystems.Controllers.PID"
+>PID</a> ),</li>
+  <li>and the digital implementation of the PID with two degrees of freedom in the incremental form
+  (model <A HREF="IndustrialControlSystems_Controllers_Digital.html#IndustrialControlSystems.Controllers.Digital.PID_2dof"
+>PID_2dof</a> ).</li>
+  </ul><br>
+  There controllers regulates a second order process with trasfer function<br>
+  <pre>
+   Y(s)          (1+15s)
+   ----  =  ----------------
+   U(s)       (1+10s)(1+2s)
+  </pre>
+  <br>
+  
+  The following images show the SetPoint following and disturbance rejection without saturation<br><br>
+  <b>Set Point and Process Variables</b><br>
+  <img src="images/Applications/ControlProblems/CvsD_PV.png"><br>
+  <b>Control Signals</b><br>
+  <img src="images/Applications/ControlProblems/CvsD_CS.png"><br>
+  <br>
+  
+  To be noticed that the discretised version of the PID and the digital implementation of the incremental PID have 
+  the same behaviour.<br>
+  The same is not valid when the saturation is introduced. If limiting the controller action between [0,2] the 
+  discrete time version and the digital one behave quite differently<br><br>
+  <b>Set Point and Process Variables</b><br>
+  <img src="images/Applications/ControlProblems/CvsD_PV_aw.png"><br>
+  <b>Control Signals</b><br>
+  <img src="images/Applications/ControlProblems/CvsD_CS_aw.png"><br>
+  <img src="images/Applications/ControlProblems/CvsD_CS_aw2.png"><br>
+  <br>
+  
+  This difference is due to the nature of the digital implementation that is incremental, while the other two are 
+  positional.<br>
+  This problem does not appear if the Set Point reference changes soothly, switching to a ramp Set Point signal, 
+  as shown in the following picture.
+  <br><br>
+  <b>Process Variables and Control Signals with a ramp Set Point</b><br>
+  <img src="images/Applications/ControlProblems/CvsD_ramp.png"><br>
+  
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CascadeControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.CascadeControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.CascadeControl"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.CascadeControl</H2>
+<B>Cascade control</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  In this examples are compared two control schemes. The aim of this example is to show how classic control
+  strategy can be implemented with the models contained within the <b>ControlLibrary</b>.<br>
+  The system to be controlled is composed by two dynamics: a fast one and a slow one.
+  The trasfer functions follow:<br>
+  <b>Fast</b>
+  <pre>
+           Y(s)           1
+   P1(s) = ----  =  -------------
+           U(s)       (1+0.05s)
+  </pre>
+  <br>
+  <b>Slow</b><br>
+  <pre>
+           Y(s)           1
+   P2(s) = ----  =  -------------
+           U(s)       (1+2s+s^2)
+  </pre>
+  <br>
+  Two different control scheme (both using discrete dime controllers) are compared. In the first one there is one controller
+  that acts <br> directly on the fast process P1 and measures the output of the second process P2.<br>
+  In the second case, there are two controllers that act respectively on the fast and slow dynamics. 
+  The second approach is called cascade control.<br><br>
+  <img src="images/Applications/ControlProblems/Cascade.png"><br>
+  The Step responce of the two scheme are listed below.<br>
+  <img src="images/Applications/ControlProblems/CascadePV.png"><br>
+  Despite for a step variation of the Set Point, the two responces (classic scheme red line, and cascade the green one) are<br>
+  practically the same, this is not true when disturbances occur. It is evident that the cascade control scheme<br>
+  performs better than the classic one. Below are reported the control signal of the controllers<br>
+  <img src="images/Applications/ControlProblems/CascadeCS.png"><br>
+  where is evidenced the fast action of the inner control loop.<br><br>
+   
+  Since the controller are discrete time ones, it is important to choose the right sampling time for each loop <br>
+  (external and internal one). In this case have been choosen a sampling time of 0.5 s for the outer loop, while a <br>
+  sampling time of 0.01 s for the inner one.
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Sampling time</TD></TR>
+<TR><TD>Ts</TD><TD> Outer loop sampling time</TD></TR>
+<TR><TD>Ts_inner</TD><TD> Inner loop sampling time</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CascadeAntiWindup<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.CascadeAntiWindup" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.CascadeAntiWindup"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.CascadeAntiWindup</H2>
+<B>Example of cascade control with external lock</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  In this examples are compared two cascade control schemes: with and without external lock.<br><br>
+  When two controllers are connected together in a cascade control scheme, the inner controller typically regulates the actuator, while
+  the outer one provides the Set Point reference for the inner one.<br>
+  Since the inner controller acts on the plants, its Control Signal have to be limited, using AntiWindup. Unfortunately it is not possible for the outer
+  controller, to know the values for which the inner regulator saturates.<br>
+  Such a problem can be voided by using the PID in its incremental form, using the Increment/Decrement lock feature, and creating 
+  an external loop between the controllers.<br>
+  If the inner regulator saturates, its <FONT FACE=Courier>satHi</FONT> signal becomes true. Connecting this signal to the 
+  <FONT FACE=Courier>forbidIncrement</FONT> input of the outer controller, avoid an useless and potentially dangerous increase of its Control Signal ( that is the
+  Set point of the inner controller that saturated). With such a scheme a windup-like effect can be avoided.<br>
+  In the following figure, the green line is the CS of the outer controller with Increment/Decrement lock, while the black one is the output of the outer 
+  controller whitout Increment/Decrement lock.<br>
+  The black line shows a windup like effect that turns in a slower reaction when the Set Point changes at time t = 30.<br><br>
+  Set Point, Process Variables (with and without external lock) and outer control signals (with and without external lock) 
+  <img src="images/Applications/ControlProblems/PID_extLock.png"><br><br>
+  inner regulators Control Signal (with and without external lock)
+  <img src="images/Applications/ControlProblems/PID_extLockCS.png"><br>
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SmithPredictor<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.ControlProblems.PI_ContinuousVsDigitalI.png" ALT="IndustrialControlSystems.Applications.ControlProblems.SmithPredictor" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.ControlProblems.SmithPredictor"></A><A HREF="IndustrialControlSystems_Applications_ControlProblems.html#IndustrialControlSystems.Applications.ControlProblems"
+>IndustrialControlSystems.Applications.ControlProblems</A>.SmithPredictor</H2>
+<B>Smith predictor controller for delayed processes</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+  <h4>Description</h4>
+  <p>
+  The aim of this example is to show how classic control strategy can be implemented with the models contained within the <b>ControlLibrary</b>.<br>
+  The system to be controlled is a delayed second order one<br>
+  <pre>
+          Y(s)           1           -8T
+   P(s) = ----  =  ---------------- e
+          U(s)       (1+0.2s)(1+s)
+  </pre>
+  <br>
+  In this case the delay is too high in order to control the process with a simple PI controller. However, the same simple<br>
+  controller can be used within a more complex structure called Smith predictor. This scheme is based on the knowledge of the process<br>
+  since it is a model based control strategy.
+  The control scheme follows, and can be replicated with the blocks contained in the library<br><br>
+  <img src="images/Applications/ControlProblems/Smith.png"><br><br>
+  
+  Two different scheme have been tested. In the first scheme the Smith predictor is based on a model that is equal to the<br>
+  real process (M(s) = P(s)), while in the second one the model is an approximation of the process. The step responces are reported below
+  <br>
+  <img src="images/Applications/ControlProblems/SmithPV.png"><br>
+  The red line is the process responce without the controller action, the green line is the process controlled with the
+  Smith predictor (M(s) = P(s)) while the pink one is the responce of the Smith predictor with an approximate model.<br>
+  Every 8 seconds (the time delay) there is an action due to the uncorrectness of the model M. However, the amplitude<br>
+  of these peacks decrease with time. The control signal of the two controllers are reported below.<br>
+  <img src="images/Applications/ControlProblems/SmithCS.png"><br>
+  
+  
+<pre></PRE><P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:16 2012.
+</address></BODY>
+</HTML>

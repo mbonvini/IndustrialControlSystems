@@ -1,0 +1,230 @@
+<HTML>
+<HEAD>
+<TITLE>IndustrialControlSystems.Applications.TrasferFunctions</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Typical transfer functions&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TrasferFunctions<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="IndustrialControlSystems.Applications.TrasferFunctions"></A><A HREF="IndustrialControlSystems_Applications.html#IndustrialControlSystems.Applications"
+>IndustrialControlSystems.Applications</A>.TrasferFunctions</H2>
+<B>Typical transfer functions</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  This sub-package contain a list of trasfer functions that represent a variety of industrial processes.<br>
+  </p>
+  <pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="IndustrialControlSystems.Applications.TrasferFunctions.TypicalTFS.png" ALT="IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="IndustrialControlSystems_Applications_TrasferFunctions.html#IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF"
+>TypicalTF</A>
+</TD><TD>This model contains a set of typical process transfer functions</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TypicalTF<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="IndustrialControlSystems.Applications.TrasferFunctions.TypicalTFI.png" ALT="IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="IndustrialControlSystems.Applications.TrasferFunctions.TypicalTF"></A><A HREF="IndustrialControlSystems_Applications_TrasferFunctions.html#IndustrialControlSystems.Applications.TrasferFunctions"
+>IndustrialControlSystems.Applications.TrasferFunctions</A>.TypicalTF</H2>
+<B>This model contains a set of typical process transfer functions</B><p>
+<P><H3>Information</H3></P>
+<PRE>
+  </pre>
+  <h4>Description</h4>
+  <p>
+  This model is a container of different trasfer functions that can model the typical processes.
+  The parameters of each TF (listed in a table below), can be modified in order to adapt each process to the user's needs. 
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1
+  ---- = -----
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/Integrator.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Integrator + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)     1     -2s
+  ---- = ----- e
+  U(s)     5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/Int+Delay.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1   
+  ---- = -------- 
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/FirstOrder.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>First Order + delay</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1      -2s
+  ---- = -------- e
+  U(s)    1 + 5s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/FirstOrder+Delay.png"><br>
+  </p>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Fast Slow</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 5.8s  
+  ---- = -------------- 
+  U(s)    (1 + 6s)(1+s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/FastSlow.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Overshooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 + 8s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/OverShooting.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Undershooting</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)      1 - 5.5s  
+  ---- = --------------- 
+  U(s)    (1 + 5s)(1+2s)  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/UnderShooting.png"><br>
+  
+  <br/>
+  <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+  <TR bgcolor=#e0e0e0><TH colspan=2>Complex Poles</TH></TR>
+  <tr>
+  <td colspan =2>
+  <pre>
+  Y(s)            1  
+  ---- = -------------------- 
+  U(s)    1 + 1.2 s + 0.025s  </pre>
+  </td>
+  </tr>
+  </table><br><br>
+  <img src="images/Applications/TrasferFunction/ComplexPoles.png"><br>
+  
+  <pre></PRE><P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>First Order</TD></TR>
+<TR><TD>mu_FO</TD><TD> Gain</TD></TR>
+<TR><TD>T_FO</TD><TD> Time constant</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>First Order +  Delay</TD></TR>
+<TR><TD>mu_FOD</TD><TD> Gain</TD></TR>
+<TR><TD>T_FOD</TD><TD> Time constant</TD></TR>
+<TR><TD>delay_FOD</TD><TD> Time delay</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Integrator</TD></TR>
+<TR><TD>mu_i</TD><TD> Gain</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Integrator +  Delay</TD></TR>
+<TR><TD>mu_iD</TD><TD> Gain</TD></TR>
+<TR><TD>delay_iD</TD><TD> Time delay</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>OverShooting system</TD></TR>
+<TR><TD>mu_OS</TD><TD> Gain</TD></TR>
+<TR><TD>Tau_OS</TD><TD> Zero&#39;s time constant</TD></TR>
+<TR><TD>T1_OS</TD><TD> Dominant pole time constant</TD></TR>
+<TR><TD>T2_OS</TD><TD> Second pole time constant</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>UnderShooting system</TD></TR>
+<TR><TD>mu_US</TD><TD> Gain</TD></TR>
+<TR><TD>Tau_US</TD><TD> Zero&#39;s time constant</TD></TR>
+<TR><TD>T1_US</TD><TD> Dominant pole time constant</TD></TR>
+<TR><TD>T2_US</TD><TD> Second pole time constant</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Complex poles</TD></TR>
+<TR><TD>mu</TD><TD> Gain</TD></TR>
+<TR><TD>xi</TD><TD> Damping coefficient</TD></TR>
+<TR><TD>omega</TD><TD> Natural frequency</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Fast-Slow system</TD></TR>
+<TR><TD>mu_FS</TD><TD> Gain</TD></TR>
+<TR><TD>Tau_FS</TD><TD> Zero&#39;s time constant</TD></TR>
+<TR><TD>T1_FS</TD><TD> Dominant pole time constant</TD></TR>
+<TR><TD>T2_FS</TD><TD> Second pole time constant</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>FO_u</TD><TD>First Order input</TD></TR>
+<TR><TD>FO_y</TD><TD>First Order output</TD></TR>
+<TR><TD>FOD_u</TD><TD>First Order+ Delay input</TD></TR>
+<TR><TD>FOD_y</TD><TD>First Order + Delay output</TD></TR>
+<TR><TD>i_u</TD><TD>Integrator input</TD></TR>
+<TR><TD>i_y</TD><TD>Integrator output</TD></TR>
+<TR><TD>iD_u</TD><TD>Integrator + Delay input</TD></TR>
+<TR><TD>iD_y</TD><TD>Integrator + Delay output</TD></TR>
+<TR><TD>OS_u</TD><TD>OverShooting input</TD></TR>
+<TR><TD>OS_y</TD><TD>OverShooting output</TD></TR>
+<TR><TD>US_u</TD><TD>UnderShooting input</TD></TR>
+<TR><TD>US_y</TD><TD>UnderShooting output</TD></TR>
+<TR><TD>Osc_u</TD><TD>Complex Poles input</TD></TR>
+<TR><TD>Osc_y</TD><TD>Complex Poles output</TD></TR>
+<TR><TD>FS_u</TD><TD>Fast Slow input</TD></TR>
+<TR><TD>FS_y</TD><TD>Fast Slow output</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon May 21 13:34:16 2012.
+</address></BODY>
+</HTML>
