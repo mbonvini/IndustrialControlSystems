@@ -131,9 +131,9 @@ algorithm
            if period>0 and nOx>=nOxMin
               and abs(period-pre(period))/period < permOxPeriodPerc/100 then
               AT     := false;
-              wox    := 2*pi/period;
-              Pox    := pi^2*(rPVmax-rPVmin)/8/(rCSmax-rCSmin);
-              TI     := tan(pm/180*pi)/wox;
+              wox    := 2*Modelica.Constants.pi/period;
+              Pox    := Modelica.Constants.pi^2*(rPVmax-rPVmin)/8/(rCSmax-rCSmin);
+              TI     := tan(pm/180*Modelica.Constants.pi)/wox;
               K      := wox*TI/Pox/sqrt(1+(wox*TI)^2);
            end if;
            rPVmax       := PV;

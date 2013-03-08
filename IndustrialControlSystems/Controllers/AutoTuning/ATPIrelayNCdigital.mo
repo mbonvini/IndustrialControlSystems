@@ -118,10 +118,10 @@ algorithm
            if period>0 and nOx>=nOxMin
               and abs(period-pre(period))/period < permOxPeriodPerc/100 then
               iMode  := 0;
-              wox    := 2*pi/period;
-              Pox    := pi^2*(rPVmax-rPVmin)/8/(rCSmax-rCSmin);
-              TI     := tan(pm/180*pi)/wox;
-              K      := tan(pm/180*pi)/(Pox*sqrt(1+(tan(pm/180*pi))^2));
+              wox    := 2*Modelica.Constants.pi/period;
+              Pox    := Modelica.Constants.pi^2*(rPVmax-rPVmin)/8/(rCSmax-rCSmin);
+              TI     := tan(pm/180*Modelica.Constants.pi)/wox;
+              K      := tan(pm/180*Modelica.Constants.pi)/(Pox*sqrt(1+(tan(pm/180*Modelica.Constants.pi))^2));
               CSi    := CS-K*Ts/TI*e;
            end if;
            rPVmax       := PV;
