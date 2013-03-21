@@ -10,11 +10,11 @@ This library can be used to set up or replicate the majority of industrial contr
 
 ## Current release
 
-Download [IndustrialControlSystems v1.0 (2012-05-15)](https://github.com/modelica-3rdparty/IndustrialControlSystems/archive/v1.0.zip)
+Download [IndustrialControlSystems v1.0 (2012-05-15)](../../archive/v1.0.zip)
 
 #### Release notes
 
-* [Version 1.0 (2012-05-15)](https://github.com/modelica-3rdparty/IndustrialControlSystems/archive/v1.0.zip):
+* [Version 1.0 (2012-05-15)](../../archive/v1.0.zip):
  * Initial release.
 
 ## License
