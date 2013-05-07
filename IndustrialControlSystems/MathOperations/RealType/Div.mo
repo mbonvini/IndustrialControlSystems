@@ -60,7 +60,7 @@ equation
   annotation (Icon(graphics={Text(
           extent={{-62,66},{74,-44}},
           lineColor={0,0,0},
-          textString="÷")}), Documentation(info="
+          textString="Ã·")}), Documentation(info="
   <HTML>
   <h4>Description</h4>
   <p>
