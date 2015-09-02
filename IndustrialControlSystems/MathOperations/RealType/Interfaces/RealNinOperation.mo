@@ -3,7 +3,7 @@ partial model RealNinOperation "Real comparison interface"
   parameter Real Ts = 0.1 "sampling time" annotation(Evaluate=true);
   parameter Integer nInput = 1 "number of inputs" annotation(Evaluate=true);
   parameter Boolean useInputs = true "=true, if inputs are enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean FixedPoint = false
     "|Fixed Point| Use fixed point real numbers"  annotation(Evaluate=true);
   parameter Integer Nbit=16 " Number of bit for representing the real numbers"

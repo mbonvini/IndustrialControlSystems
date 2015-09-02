@@ -4,7 +4,7 @@ partial model Block "Partial interface for a continuous time control block"
   Real tr "track reference value";
   Boolean ts "track reference signal";
   parameter Boolean useTS = false "|Tracking| =true, if TS input is enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Real eps = 0.001
     "|Tracking| Small time constant used in tracking mode"                          annotation(Evaluate = true);
   parameter Boolean AntiWindup = false
