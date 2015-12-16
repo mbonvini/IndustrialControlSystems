@@ -49,8 +49,8 @@ algorithm
 <li>11 May 2012 (author: Marco Bonvini)</li>
 </ul></p>
 <dl><dt><b>Main Authors:</b> <br/></dt>
-<dd>Marco Bonvini; &LT;<a href=\"mailto:bonvini@elet.polimi.it\">bonvini@elet.polimi.it</a>&GT;</dd>
-<dd>Alberto Leva &LT;<a href=\"mailto:leva@elet.polimi.it\">leva@elet.polimi.it</a>&GT;<br/></dd>
+<dd>Marco Bonvini; &lt;<a href=\"mailto:bonvini@elet.polimi.it\">bonvini@elet.polimi.it</a>&gt;</dd>
+<dd>Alberto Leva &lt;<a href=\"mailto:leva@elet.polimi.it\">leva@elet.polimi.it</a>&gt;<br/></dd>
 <dd>Politecnico di Milano</dd>
 <dd>Dipartimento di Elettronica e Informazione</dd>
 <dd>Via Ponzio 34/5</dd>

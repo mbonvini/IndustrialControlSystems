@@ -7,8 +7,8 @@ model Contacts "Authors' contacts"
 <a href=\"http://home.dei.polimi.it/leva/download.html\">http://home.dei.polimi.it/leva/download.html</a><br><br>
 
 <br/><b>Main Authors:</b><br>
-Marco Bonvini &LT;<a href=\"mailto:bonvini@elet.polimi.it\">bonvini@elet.polimi.it</a>&GT;<br>
-Alberto Leva &LT;<a href=\"mailto:leva@elet.polimi.it\">leva@elet.polimi.it</a>&GT;<br><br>
+Marco Bonvini &lt;<a href=\"mailto:bonvini@elet.polimi.it\">bonvini@elet.polimi.it</a>&gt;<br>
+Alberto Leva &lt;<a href=\"mailto:leva@elet.polimi.it\">leva@elet.polimi.it</a>&gt;<br><br>
 Politecnico di Milano<br>
 Dipartimento di Elettronica e Informazione<br>
 Via Ponzio 34/5<br>
