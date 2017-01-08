@@ -15,16 +15,16 @@ partial model Controller "Partial interface for a digital controller"
   parameter Real CS_start = 0 "|Initialisation| output initial value"  annotation(Evaluate=true);
   parameter Boolean useTS = false
     "|Attributes| =true, if TS and TR inputs are enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean useBIAS = false
     "|Attributes| =true, if BIAS input is enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean useMAN = false
     "|Attributes| =true, if MANUAL input is enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean useForbid = false
     "|Attributes| =true, if Forbid inputs are enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   Modelica.Blocks.Interfaces.RealInput TR if useTS "Track Reference signal"
                                                    annotation (Placement(
         transformation(

@@ -18,13 +18,13 @@ partial model Controller "Partial interface for a generic controller"
                             between auto and tracking mode"  annotation(Evaluate=true);
   parameter Boolean useTS = false
     "|Attributes| =true, if TS and TR inputs are enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean useBIAS = false
     "|Attributes| =true, if BIAS input is enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   parameter Boolean useAT = false
     "|Attributes| =true, if AutoTuning input is enabled"
-  annotation(Evaluate=true, HideResult=true, choices(__Dymola_checkBox=true));
+  annotation(Evaluate=true, HideResult=true, choices(checkBox=true));
   Modelica.Blocks.Interfaces.RealInput TR if useTS "Track Reference signal"
                                                    annotation (Placement(
         transformation(
