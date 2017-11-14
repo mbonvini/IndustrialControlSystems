@@ -15,7 +15,7 @@ equation
         pre(Sd),
         Sd,
         R,
-        startTime,
+        pre(startTime),
         time);
     (run,Q) = IndustrialControlSystems.Logical.Timers.Functions.tim(
         S,
